@@ -11,8 +11,10 @@ import javax.persistence.Column;
 @Entity
 public class Student {
 	@Id
-	@GeneratedValue
+	@GeneratedValue	
 	private Long id;
+
+	//private Int id;
 
 	//@Column(name="name")
 
