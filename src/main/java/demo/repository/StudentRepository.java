@@ -1,11 +1,11 @@
 package demo.repository;
 
 import demo.model.Student;
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import java.util.List;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student, String> {
-	List<Student> findByName(String name);
+public interface StudentRepository extends CrudRepository<Student, String> {
+	Optional<Student> findById(String username);
 }

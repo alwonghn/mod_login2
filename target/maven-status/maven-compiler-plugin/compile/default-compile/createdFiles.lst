@@ -1,5 +1,7 @@
 demo/Application.class
-demo/service/IStudentService.class
+demo/bean/Login.class
 demo/repository/StudentRepository.class
 demo/model/Student.class
+demo/service/StudentServiceImpl.class
+demo/controller/LoginController.class
 demo/service/StudentService.class
